@@ -1,3 +1,5 @@
+const Monster = require("./monster");
+
 const Witcher = function (steel, silver, sign, ranged){
     this.steel = steel;
     this.silver = silver;
@@ -36,5 +38,14 @@ Witcher.prototype.findLightestTrophy = function(){
     return lightestTrophy;
 }
 
+Witcher.prototype.battleSilver = function(witcher, monster){
+    let attacks = monster.health / witcher.silver
+    return attacks
+}
+
+Witcher.prototype.battleSteel = function(witcher, monster){
+    let attacks = monster.health / witcher.steel
+    return attacks
+}
 
 module.exports = Witcher;
