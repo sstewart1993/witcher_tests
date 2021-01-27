@@ -6,7 +6,7 @@ const Witcher = function (steel, silver, sign, ranged, health, wallet){
     this.sign = sign;
     this.ranged = ranged;
     this.health = health;
-    this.wallet = wallet
+    this.wallet = wallet;
     this.trophies = []
 }
 
